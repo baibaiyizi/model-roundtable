@@ -1,0 +1,222 @@
+# Third-party notices
+
+Model Roundtable original source code is MIT licensed. The following dependencies retain their respective licenses. Top-level license and notice files from installed production packages and the dependency closure of explicit bundled roots (React, React DOM, React Markdown, remark-gfm, lucide-react and the OpenCode SDK) are collected under resources/licenses. Build/test-only devDependencies are excluded. The inventory.json file records the collected npm texts. Native Canvas components are checked separately against the pinned resources/native-licenses manifest; missing texts, hash mismatches or package drift stop generation.
+
+Mihomo 1.19.31 is an unmodified, independently runnable GPLv3 program. Its license, official download URLs, SHA-256 hashes and build/source instructions are in resources/network. The matching source archive is included in the accompanying versioned source distribution under resources/network/sources.
+
+Canvas 1.0.9 includes native Skia, ICU and other C/C++ and Rust components. Their original notices, exact source revisions and checksums are under resources/licenses/native. This includes the checksum-verified Cargo package inventory, vendored native libraries and the corresponding Rust standard-library notices. This product uses the FreeType Project under the FreeType License, and is based in part on the work of the Independent JPEG Group. The native inventory conservatively includes build-time and other-platform Cargo entries; it does not label every listed package as linked into the Windows binary.
+
+Electron includes Chromium and Node.js and ships its own LICENSE.electron.txt and LICENSES.chromium.html in the distribution.
+
+FFmpeg 8.1.3 is built from unmodified official release source as independently replaceable programs and shared libraries, under LGPL-2.1-or-later. Optional external libraries, network support, GPL, nonfree and version3 are disabled. The complete matching source archive, detached signature, release public key, GPG verification record, actual build recipe, configuration and per-file checksums are bundled under resources/media. BUILD-MANIFEST.json also records PE imports: Windows system libraries and the bundled FFmpeg libraries only.
+
+FFmpeg license texts, MinGW runtime notices and the GCC Runtime Library Exception are included in resources/media. The pinned w64devkit toolchain is used only for building and is not installed with the application. SOURCE.txt and BUILD-RECIPE.txt explain how to locate and rebuild the independently replaceable media components.
+
+OpenCode, ripgrep, LanceDB, Node.js, Python, Git, uv and the skills CLI are independently downloaded components with pinned sources, versions and checksums under resources/components. The core installer does not bundle their executable payloads. License files supplied in the original archives are retained. OpenCode, Codex and uv additionally install unmodified license/notice texts from their exact repository version tags, pinned under resources/components/licenses/SOURCES.json. Optional Codex and Claude Code components are original official distributions downloaded only when the user prepares them, and retain their own terms. The on-demand shared document runtime includes CPython, python-docx, openpyxl, python-pptx, pypdf, ReportLab, lxml, Pillow, other locked wheels, Noto fonts and LibreOffice; their original notices and fixed source locations are retained in the installed packages and resources/components/manifest.json, with development build records under resources/documents. LibreOffice is a separate process and can be replaced with a matching compatible build. These components are not relicensed under the application MIT license.
+
+Product research and workflow references are listed in [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md), separately from incorporated libraries, independently distributed components and recommended external integrations. Acknowledgement does not replace the applicable license conditions.
+
+| Dependency | License | Source |
+| --- | --- | --- |
+| @asamuzakjp/css-color@3.2.0 | MIT | git+https://github.com/asamuzaK/cssColor.git |
+| @csstools/color-helpers@5.1.0 | MIT-0 | git+https://github.com/csstools/postcss-plugins.git |
+| @csstools/css-calc@2.1.4 | MIT | git+https://github.com/csstools/postcss-plugins.git |
+| @csstools/css-color-parser@3.1.0 | MIT | git+https://github.com/csstools/postcss-plugins.git |
+| @csstools/css-parser-algorithms@3.0.5 | MIT | git+https://github.com/csstools/postcss-plugins.git |
+| @csstools/css-tokenizer@3.0.4 | MIT | git+https://github.com/csstools/postcss-plugins.git |
+| @hono/node-server@1.19.17 | MIT | https://github.com/honojs/node-server.git |
+| @isaacs/fs-minipass@4.0.1 | ISC | https://github.com/npm/fs-minipass.git |
+| @modelcontextprotocol/client@2.1.0 | MIT | git+https://github.com/modelcontextprotocol/typescript-sdk.git |
+| @modelcontextprotocol/core@2.1.0 | MIT | git+https://github.com/modelcontextprotocol/typescript-sdk.git |
+| @modelcontextprotocol/node@2.1.0 | MIT | git+https://github.com/modelcontextprotocol/typescript-sdk.git |
+| @modelcontextprotocol/server@2.1.0 | MIT | git+https://github.com/modelcontextprotocol/typescript-sdk.git |
+| @mozilla/readability@0.6.0 | Apache-2.0 | https://github.com/mozilla/readability |
+| @napi-rs/canvas-win32-x64-msvc@1.0.9 | MIT | git+https://github.com/Brooooooklyn/canvas.git |
+| @napi-rs/canvas@1.0.9 | MIT | git+https://github.com/Brooooooklyn/canvas.git |
+| @opencode-ai/sdk@1.18.32 | MIT |  |
+| @types/debug@4.1.13 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/estree-jsx@1.0.5 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/estree@1.0.9 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/hast@3.0.5 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/mdast@4.0.4 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/ms@2.1.0 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/unist@2.0.11 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @types/unist@3.0.3 | MIT | https://github.com/DefinitelyTyped/DefinitelyTyped.git |
+| @ungap/structured-clone@1.4.0 | ISC | git+https://github.com/ungap/structured-clone.git |
+| @xmldom/xmldom@0.8.15 | MIT | git://github.com/xmldom/xmldom.git |
+| agent-base@7.1.4 | MIT | https://github.com/TooTallNate/proxy-agents.git |
+| argparse@1.0.10 | MIT | nodeca/argparse |
+| bail@2.0.2 | MIT | wooorm/bail |
+| base64-js@1.5.1 | MIT | git://github.com/beatgammit/base64-js.git |
+| bluebird@3.4.7 | MIT | git://github.com/petkaantonov/bluebird.git |
+| ccount@2.0.1 | MIT | wooorm/ccount |
+| character-entities-html4@2.1.0 | MIT | wooorm/character-entities-html4 |
+| character-entities-legacy@3.0.0 | MIT | wooorm/character-entities-legacy |
+| character-entities@2.0.2 | MIT | wooorm/character-entities |
+| character-reference-invalid@2.0.1 | MIT | wooorm/character-reference-invalid |
+| chownr@3.0.0 | BlueOak-1.0.0 | git://github.com/isaacs/chownr.git |
+| comma-separated-tokens@2.0.3 | MIT | wooorm/comma-separated-tokens |
+| core-util-is@1.0.3 | MIT | git://github.com/isaacs/core-util-is |
+| cross-spawn@7.0.6 | MIT | git@github.com:moxystudio/node-cross-spawn.git |
+| cssstyle@4.6.0 | MIT | jsdom/cssstyle |
+| data-urls@5.0.0 | MIT | jsdom/data-urls |
+| debug@4.4.3 | MIT | git://github.com/debug-js/debug.git |
+| decimal.js@10.6.0 | MIT | https://github.com/MikeMcl/decimal.js.git |
+| decode-named-character-reference@1.3.0 | MIT | wooorm/decode-named-character-reference |
+| dequal@2.0.3 | MIT | lukeed/dequal |
+| devlop@1.1.0 | MIT | wooorm/devlop |
+| diff@8.0.4 | BSD-3-Clause | https://github.com/kpdecker/jsdiff.git |
+| dingbat-to-unicode@1.0.2 | BSD-2-Clause | git+https://github.com/mwilliamson/dingbat-to-unicode.git |
+| duck@0.1.12 | BSD | https://github.com/mwilliamson/duck.js.git |
+| entities@6.0.1 | BSD-2-Clause | git://github.com/fb55/entities.git |
+| escape-string-regexp@5.0.0 | MIT | sindresorhus/escape-string-regexp |
+| estree-util-is-identifier-name@3.0.0 | MIT | syntax-tree/estree-util-is-identifier-name |
+| eventsource-parser@3.0.6 | MIT | git+ssh://git@github.com/rexxars/eventsource-parser.git |
+| eventsource@3.0.7 | MIT | git://git@github.com/EventSource/eventsource.git |
+| extend@3.0.2 | MIT | https://github.com/justmoon/node-extend.git |
+| hast-util-to-jsx-runtime@2.3.6 | MIT | syntax-tree/hast-util-to-jsx-runtime |
+| hast-util-whitespace@3.0.0 | MIT | syntax-tree/hast-util-whitespace |
+| hono@4.13.8 | MIT | git+https://github.com/honojs/hono.git |
+| html-encoding-sniffer@4.0.0 | MIT | jsdom/html-encoding-sniffer |
+| html-url-attributes@3.0.1 | MIT | https://github.com/rehypejs/rehype-minify/tree/main/packages/html-url-attributes |
+| http-proxy-agent@7.0.2 | MIT | https://github.com/TooTallNate/proxy-agents.git |
+| https-proxy-agent@7.0.6 | MIT | https://github.com/TooTallNate/proxy-agents.git |
+| iconv-lite@0.6.3 | MIT | git://github.com/ashtuchkin/iconv-lite.git |
+| immediate@3.0.6 | MIT | git://github.com/calvinmetcalf/immediate.git |
+| inherits@2.0.4 | ISC | git://github.com/isaacs/inherits |
+| inline-style-parser@0.2.7 | MIT | git+https://github.com/remarkablemark/inline-style-parser.git |
+| is-alphabetical@2.0.1 | MIT | wooorm/is-alphabetical |
+| is-alphanumerical@2.0.1 | MIT | wooorm/is-alphanumerical |
+| is-decimal@2.0.1 | MIT | wooorm/is-decimal |
+| is-hexadecimal@2.0.1 | MIT | wooorm/is-hexadecimal |
+| is-plain-obj@4.1.0 | MIT | sindresorhus/is-plain-obj |
+| is-potential-custom-element-name@1.0.1 | MIT | https://github.com/mathiasbynens/is-potential-custom-element-name.git |
+| isarray@1.0.0 | MIT | git://github.com/juliangruber/isarray.git |
+| isexe@2.0.0 | ISC | git+https://github.com/isaacs/isexe.git |
+| jose@6.2.12 | MIT | panva/jose |
+| jsdom@26.1.0 | MIT | git+https://github.com/jsdom/jsdom.git |
+| jszip@3.10.2 | (MIT OR GPL-3.0-or-later) | https://github.com/Stuk/jszip.git |
+| lie@3.3.0 | MIT | https://github.com/calvinmetcalf/lie.git |
+| longest-streak@3.1.0 | MIT | wooorm/longest-streak |
+| lop@0.4.2 | BSD-2-Clause | https://github.com/mwilliamson/lop.git |
+| lru-cache@10.4.3 | ISC | git://github.com/isaacs/node-lru-cache.git |
+| lucide-react@0.468.0 | ISC | https://github.com/lucide-icons/lucide.git |
+| mammoth@1.12.3 | BSD-2-Clause | https://github.com/mwilliamson/mammoth.js.git |
+| markdown-table@3.0.4 | MIT | wooorm/markdown-table |
+| mdast-util-find-and-replace@3.0.2 | MIT | syntax-tree/mdast-util-find-and-replace |
+| mdast-util-from-markdown@2.0.3 | MIT | syntax-tree/mdast-util-from-markdown |
+| mdast-util-gfm-autolink-literal@2.0.1 | MIT | syntax-tree/mdast-util-gfm-autolink-literal |
+| mdast-util-gfm-footnote@2.1.0 | MIT | syntax-tree/mdast-util-gfm-footnote |
+| mdast-util-gfm-strikethrough@2.0.0 | MIT | syntax-tree/mdast-util-gfm-strikethrough |
+| mdast-util-gfm-table@2.0.0 | MIT | syntax-tree/mdast-util-gfm-table |
+| mdast-util-gfm-task-list-item@2.0.0 | MIT | syntax-tree/mdast-util-gfm-task-list-item |
+| mdast-util-gfm@3.1.0 | MIT | syntax-tree/mdast-util-gfm |
+| mdast-util-mdx-expression@2.0.1 | MIT | syntax-tree/mdast-util-mdx-expression |
+| mdast-util-mdx-jsx@3.2.0 | MIT | syntax-tree/mdast-util-mdx-jsx |
+| mdast-util-mdxjs-esm@2.0.1 | MIT | syntax-tree/mdast-util-mdxjs-esm |
+| mdast-util-phrasing@4.1.0 | MIT | syntax-tree/mdast-util-phrasing |
+| mdast-util-to-hast@13.2.1 | MIT | syntax-tree/mdast-util-to-hast |
+| mdast-util-to-markdown@2.1.2 | MIT | syntax-tree/mdast-util-to-markdown |
+| mdast-util-to-string@4.0.0 | MIT | syntax-tree/mdast-util-to-string |
+| micromark-core-commonmark@2.0.3 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-core-commonmark |
+| micromark-extension-gfm-autolink-literal@2.1.0 | MIT | micromark/micromark-extension-gfm-autolink-literal |
+| micromark-extension-gfm-footnote@2.1.0 | MIT | micromark/micromark-extension-gfm-footnote |
+| micromark-extension-gfm-strikethrough@2.1.0 | MIT | micromark/micromark-extension-gfm-strikethrough |
+| micromark-extension-gfm-table@2.1.2 | MIT | micromark/micromark-extension-gfm-table |
+| micromark-extension-gfm-tagfilter@2.0.0 | MIT | micromark/micromark-extension-gfm-tagfilter |
+| micromark-extension-gfm-task-list-item@2.1.0 | MIT | micromark/micromark-extension-gfm-task-list-item |
+| micromark-extension-gfm@3.0.0 | MIT | micromark/micromark-extension-gfm |
+| micromark-factory-destination@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-factory-destination |
+| micromark-factory-label@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-factory-label |
+| micromark-factory-space@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-factory-space |
+| micromark-factory-title@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-factory-title |
+| micromark-factory-whitespace@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-factory-whitespace |
+| micromark-util-character@2.1.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-character |
+| micromark-util-chunked@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-chunked |
+| micromark-util-classify-character@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-classify-character |
+| micromark-util-combine-extensions@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-combine-extensions |
+| micromark-util-decode-numeric-character-reference@2.0.2 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-numeric-character-reference |
+| micromark-util-decode-string@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-decode-string |
+| micromark-util-encode@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-encode |
+| micromark-util-html-tag-name@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-html-tag-name |
+| micromark-util-normalize-identifier@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-normalize-identifier |
+| micromark-util-resolve-all@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-resolve-all |
+| micromark-util-sanitize-uri@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-sanitize-uri |
+| micromark-util-subtokenize@2.1.0 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-subtokenize |
+| micromark-util-symbol@2.0.1 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-symbol |
+| micromark-util-types@2.0.2 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark-util-types |
+| micromark@4.0.2 | MIT | https://github.com/micromark/micromark/tree/main/packages/micromark |
+| minipass@7.1.3 | BlueOak-1.0.0 | https://github.com/isaacs/minipass |
+| minizlib@3.1.0 | MIT | git+https://github.com/isaacs/minizlib.git |
+| ms@2.1.3 | MIT | vercel/ms |
+| nwsapi@2.2.28 | MIT | git+https://github.com/dperini/nwsapi.git |
+| openai@7.21.0 | Apache-2.0 | github:openai/openai-node |
+| option@0.2.4 | BSD-2-Clause | https://github.com/mwilliamson/node-options.git |
+| pako@1.0.11 | (MIT AND Zlib) | nodeca/pako |
+| parse-entities@4.0.2 | MIT | wooorm/parse-entities |
+| parse5@7.3.0 | MIT | git://github.com/inikulin/parse5.git |
+| path-is-absolute@1.0.1 | MIT | sindresorhus/path-is-absolute |
+| path-key@3.1.1 | MIT | sindresorhus/path-key |
+| pdfjs-dist@6.3.289 | Apache-2.0 | git+https://github.com/mozilla/pdf.js.git |
+| pend@1.2.0 | MIT | git://github.com/andrewrk/node-pend.git |
+| pkce-challenge@5.0.1 | MIT | git+https://github.com/crouchcd/pkce-challenge.git |
+| process-nextick-args@2.0.1 | MIT | https://github.com/calvinmetcalf/process-nextick-args.git |
+| property-information@7.2.0 | MIT | wooorm/property-information |
+| punycode@2.3.1 | MIT | https://github.com/mathiasbynens/punycode.js.git |
+| react-dom@19.3.0 | MIT | https://github.com/react/react.git |
+| react-markdown@10.1.0 | MIT | remarkjs/react-markdown |
+| react@19.3.0 | MIT | https://github.com/react/react.git |
+| readable-stream@2.3.8 | MIT | git://github.com/nodejs/readable-stream |
+| remark-gfm@4.0.1 | MIT | remarkjs/remark-gfm |
+| remark-parse@11.0.0 | MIT | https://github.com/remarkjs/remark/tree/main/packages/remark-parse |
+| remark-rehype@11.1.2 | MIT | remarkjs/remark-rehype |
+| remark-stringify@11.0.0 | MIT | https://github.com/remarkjs/remark/tree/main/packages/remark-stringify |
+| rrweb-cssom@0.8.0 | MIT | rrweb-io/CSSOM |
+| safe-buffer@5.1.2 | MIT | git://github.com/feross/safe-buffer.git |
+| safer-buffer@2.1.2 | MIT | git+https://github.com/ChALkeR/safer-buffer.git |
+| saxes@6.0.0 | ISC | https://github.com/lddubeau/saxes.git |
+| scheduler@0.28.0 | MIT | https://github.com/react/react.git |
+| setimmediate@1.0.5 | MIT | YuzuJS/setImmediate |
+| shebang-command@2.0.0 | MIT | kevva/shebang-command |
+| shebang-regex@3.0.0 | MIT | sindresorhus/shebang-regex |
+| space-separated-tokens@2.0.2 | MIT | wooorm/space-separated-tokens |
+| sprintf-js@1.0.3 | BSD-3-Clause | https://github.com/alexei/sprintf.js.git |
+| string_decoder@1.1.1 | MIT | git://github.com/nodejs/string_decoder.git |
+| stringify-entities@4.0.4 | MIT | wooorm/stringify-entities |
+| style-to-js@1.1.21 | MIT | git+https://github.com/remarkablemark/style-to-js.git |
+| style-to-object@1.0.14 | MIT | git+https://github.com/remarkablemark/style-to-object.git |
+| symbol-tree@3.2.4 | MIT | https://github.com/jsdom/js-symbol-tree.git |
+| tar@7.5.22 | BlueOak-1.0.0 | https://github.com/isaacs/node-tar.git |
+| tldts-core@6.1.86 | MIT | git+ssh://git@github.com/remusao/tldts.git |
+| tldts@6.1.86 | MIT | git+ssh://git@github.com/remusao/tldts.git |
+| tough-cookie@5.1.2 | BSD-3-Clause | git://github.com/salesforce/tough-cookie.git |
+| tr46@5.1.1 | MIT | https://github.com/jsdom/tr46 |
+| trim-lines@3.0.1 | MIT | wooorm/trim-lines |
+| trough@2.2.0 | MIT | wooorm/trough |
+| underscore@1.13.8 | MIT | git://github.com/jashkenas/underscore.git |
+| undici@7.29.1 | MIT | git+https://github.com/nodejs/undici.git |
+| unified@11.0.5 | MIT | unifiedjs/unified |
+| unist-util-is@6.0.1 | MIT | syntax-tree/unist-util-is |
+| unist-util-position@5.0.0 | MIT | syntax-tree/unist-util-position |
+| unist-util-stringify-position@4.0.0 | MIT | syntax-tree/unist-util-stringify-position |
+| unist-util-visit-parents@6.0.2 | MIT | syntax-tree/unist-util-visit-parents |
+| unist-util-visit@5.1.0 | MIT | syntax-tree/unist-util-visit |
+| util-deprecate@1.0.2 | MIT | git://github.com/TooTallNate/util-deprecate.git |
+| vfile-message@4.0.3 | MIT | vfile/vfile-message |
+| vfile@6.0.3 | MIT | vfile/vfile |
+| w3c-xmlserializer@5.0.0 | MIT | jsdom/w3c-xmlserializer |
+| webidl-conversions@7.0.0 | BSD-2-Clause | jsdom/webidl-conversions |
+| whatwg-encoding@3.1.1 | MIT | jsdom/whatwg-encoding |
+| whatwg-mimetype@4.0.0 | MIT | jsdom/whatwg-mimetype |
+| whatwg-url@14.2.0 | MIT | jsdom/whatwg-url |
+| which@2.0.2 | ISC | git://github.com/isaacs/node-which.git |
+| ws@8.21.3 | MIT | git+https://github.com/websockets/ws.git |
+| xlsx@0.20.3 | Apache-2.0 | https://git.sheetjs.com/SheetJS/sheetjs |
+| xml-name-validator@5.0.0 | Apache-2.0 | jsdom/xml-name-validator |
+| xmlbuilder@10.1.1 | MIT | git://github.com/oozcitak/xmlbuilder-js.git |
+| xmlchars@2.2.0 | MIT | https://github.com/lddubeau/xmlchars.git |
+| yallist@5.0.0 | BlueOak-1.0.0 | git+https://github.com/isaacs/yallist.git |
+| yaml@2.9.1 | ISC | github:eemeli/yaml |
+| yauzl@3.4.0 | MIT | git+https://github.com/thejoshwolfe/yauzl.git |
+| zod@4.6.5 | MIT | git+https://github.com/colinhacks/zod.git |
+| zwitch@2.0.4 | MIT | wooorm/zwitch |

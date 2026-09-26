@@ -1,0 +1,35 @@
+{
+  "name": "Microsoft Visual C++ 2015-2022 Runtime x64",
+  "version": "14.44.35211.0",
+  "deploymentDirectory": "resources/app.asar.unpacked/node_modules/@lancedb/lancedb-win32-x64-msvc",
+  "source": {
+    "discoveryUrl": "https://aka.ms/vs/17/release/vc_redist.x64.exe",
+    "url": "https://download.visualstudio.microsoft.com/download/pr/bd1c8d9d-ba95-4eee-bc6e-df1fcc876373/CC0FF0EB1DC3F5188AE6300FAEF32BF5BEEBA4BDD6E8E445A9184072096B713B/VC_redist.x64.exe",
+    "sha256": "cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b",
+    "size": 25635768,
+    "signer": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+    "signatureStatus": "Valid",
+    "verifiedAt": "2026-09-23"
+  },
+  "attachedCabinet": { "offset": 686152, "size": 24939223, "x64MinimumPayload": "a12" },
+  "files": [
+    {
+      "name": "vcruntime140.dll",
+      "cabinetName": "vcruntime140.dll_amd64",
+      "sha256": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066",
+      "size": 124544,
+      "version": "14.44.35211.0",
+      "signer": "CN=Microsoft Windows Software Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US",
+      "certificateThumbprint": "EC5F0D7EE2327688384B4FDF5D7633553A0D055F",
+      "signatureStatus": "Valid",
+      "requiredBy": "@lancedb/lancedb-win32-x64-msvc 0.39.0",
+      "imports": ["api-ms-win-crt-runtime-l1-1-0.dll", "api-ms-win-crt-string-l1-1-0.dll", "api-ms-win-crt-heap-l1-1-0.dll", "api-ms-win-crt-stdio-l1-1-0.dll", "api-ms-win-crt-convert-l1-1-0.dll", "KERNEL32.dll"]
+    }
+  ],
+  "licenses": [
+    { "name": "LICENSE-en.rtf", "bootstrapName": "u4", "sha256": "8099dc3cf9502c335da829e5c755948a12e3e6de490eb492a99deb673d883d8b" },
+    { "name": "LICENSE-zh-CN.rtf", "bootstrapName": "u28", "sha256": "a808b4933ce3b3e0893504dbef43ebf90b8b567f94bd6481b6315ed9141e1b11" }
+  ],
+  "redistributionTerms": "https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution",
+  "deploymentDocumentation": "https://learn.microsoft.com/en-us/cpp/windows/redistributing-visual-cpp-files?view=msvc-170"
+}

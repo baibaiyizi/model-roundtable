@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "component": "opencode",
+      "version": "1.18.32",
+      "file": "opencode-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/anomalyco/opencode/v1.18.32/LICENSE",
+      "sha256": "625f0f619133f89bbbb2abe37369613dfa1885eba1e50d02170deb62bb42cb6b"
+    },
+    {
+      "component": "codex",
+      "version": "0.156.1",
+      "file": "codex-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/openai/codex/rust-v0.156.1/LICENSE",
+      "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc"
+    },
+    {
+      "component": "codex",
+      "version": "0.156.1",
+      "file": "codex-NOTICE.txt",
+      "url": "https://raw.githubusercontent.com/openai/codex/rust-v0.156.1/NOTICE",
+      "sha256": "9d71575ecfd9a843fc1677b0efb08053c6ba9fd686a0de1a6f5382fd3c220915"
+    },
+    {
+      "component": "uv",
+      "version": "0.12.18",
+      "file": "uv-LICENSE-MIT.txt",
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/0.12.18/LICENSE-MIT",
+      "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c"
+    },
+    {
+      "component": "uv",
+      "version": "0.12.18",
+      "file": "uv-LICENSE-APACHE.txt",
+      "url": "https://raw.githubusercontent.com/astral-sh/uv/0.12.18/LICENSE-APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    }
+  ]
+}

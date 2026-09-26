@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "durationSeconds": 60,
+  "audio": "none",
+  "disclosure": "真实界面 · 演示数据与受控响应 · 等待已剪辑",
+  "scenes": [
+    {"id":"intro","start":0,"end":5,"title":"让你的模型，一起把事做好。","caption":"模型圆桌 1.0.0｜多模型讨论、执行与审阅","source":"cover","note":"原创主视觉与真实产品截图"},
+    {"id":"setup","start":5,"end":13,"title":"先把不同观点，请到一张桌上","caption":"圆桌、自由群聊、正式辩论，按问题选择。","source":"setup","note":"真实讨论创建表单，演示模型明确标注"},
+    {"id":"discussion","start":13,"end":23,"title":"独立思考，再交叉评议","caption":"保留共识，也留下分歧和需要验证的问题。","source":"discussion","note":"真实流式讨论与完成界面，受控响应"},
+    {"id":"handoff","start":23,"end":31,"title":"讨论出的方案，交给执行者","caption":"先确认任务、完成判定和审阅者，再开始。","source":"handoff","note":"真实交接与任务确认"},
+    {"id":"execution","start":31,"end":41,"title":"真正改文件，改动看得见","caption":"执行记录、实际文件与差异，放在同一项目里。","source":"execution","note":"前4秒真实 index.html 差异，后6秒浏览器打开实际生成页面并点击阅读状态按钮"},
+    {"id":"reviews","start":41,"end":49,"title":"做完之后，再请模型审阅","caption":"有修改建议时，最多自动修复与复核两轮。","source":"reviews","note":"真实审阅流程；本例展示通过，不伪造发生修复"},
+    {"id":"knowledge","start":49,"end":55,"title":"资料有出处，项目有记录","caption":"知识库跨讨论复用，证据保留来源位置。","source":"knowledge","note":"真实文档导入与检索，受控 Embedding"},
+    {"id":"outro","start":55,"end":60,"title":"模型圆桌 1.0.0，现已开源","caption":"Windows 桌面应用｜应用免费，模型等服务费用自付","source":"cover","note":"仅在公开 Release 可下载后发布，附 GitHub 地址"}
+  ]
+}

@@ -1,0 +1,91 @@
+name: Windows build
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm --prefix vscode-extension ci
+      - run: npm --prefix vscode-extension test
+      - run: npm --prefix vscode-extension run package
+      - run: npm run media:setup
+      - run: npm run network:setup
+      - run: node scripts/setup-components.mjs --all
+      - run: npm run typecheck
+      - run: npm run licenses
+      - run: npm run release:verify
+      - run: npm test
+      - run: npm --prefix vscode-extension run test:host
+      - run: npm run dist
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      - name: Test installed application and bundled runtimes
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $releaseVersion = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          $qaInstallRoot = [IO.Path]::GetFullPath((Join-Path $env:RUNNER_TEMP 'roundtable-install-qa'))
+          if (-not $qaInstallRoot.StartsWith([IO.Path]::GetFullPath($env:RUNNER_TEMP) + [IO.Path]::DirectorySeparatorChar, [StringComparison]::OrdinalIgnoreCase)) { throw 'Invalid QA installation path' }
+          $installer = (Resolve-Path "release/.staging/$releaseVersion/Model-Roundtable-$releaseVersion-win-x64.exe").Path
+          $setup = Start-Process -FilePath $installer -ArgumentList @('/S', "/D=$qaInstallRoot") -WindowStyle Hidden -PassThru -Wait
+          if ($setup.ExitCode -ne 0) { throw "Installer failed: $($setup.ExitCode)" }
+          try {
+            node scripts/verify-packaged.mjs $qaInstallRoot
+            if ($LASTEXITCODE -ne 0) { throw 'Installed runtime verification failed' }
+            node scripts/verify-publication.mjs --packaged $qaInstallRoot
+            if ($LASTEXITCODE -ne 0) { throw 'Installed application privacy check failed' }
+            $env:ROUNDTABLE_EXECUTABLE = Join-Path $qaInstallRoot '模型圆桌.exe'
+            $env:NODE_PATH = ''
+            npx playwright test
+            if ($LASTEXITCODE -ne 0) { throw 'Installed desktop tests failed' }
+            npm --prefix vscode-extension run test:app-host
+            if ($LASTEXITCODE -ne 0) { throw 'Installed application and installed VSIX integration failed' }
+          } finally {
+            $uninstaller = Join-Path $qaInstallRoot 'Uninstall 模型圆桌.exe'
+            if (Test-Path -LiteralPath $uninstaller) { Start-Process -FilePath $uninstaller -ArgumentList '/S' -WindowStyle Hidden -Wait }
+          }
+      - run: npm run source
+      - name: Validate source and prepare core artifacts
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $releaseVersion = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          $staging = "release/.staging/$releaseVersion"
+          Copy-Item -LiteralPath "vscode-extension/model-roundtable-companion-$releaseVersion.vsix" -Destination $staging
+          Copy-Item -LiteralPath "docs/$releaseVersion-release-notes.md" -Destination "$staging/RELEASE_NOTES.md"
+          foreach ($name in @('LICENSE', 'ACKNOWLEDGMENTS.md', 'THIRD_PARTY_NOTICES.md')) { Copy-Item -LiteralPath $name -Destination $staging }
+          node scripts/verify-publication.mjs --archive "$staging/Model-Roundtable-$releaseVersion-source.zip"
+          if ($LASTEXITCODE -ne 0) { throw 'Source publication check failed' }
+          node scripts/verify-publication.mjs --archive "$staging/model-roundtable-companion-$releaseVersion.vsix"
+          if ($LASTEXITCODE -ne 0) { throw 'VSIX publication check failed' }
+          node scripts/checksums.mjs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: model-roundtable-windows
+          if-no-files-found: error
+          include-hidden-files: true
+          path: |
+            release/.staging/*/*.exe
+            release/.staging/*/*.blockmap
+            release/.staging/*/*-source.zip
+            release/.staging/*/*.vsix
+            release/.staging/*/SHA256SUMS.txt
+            release/.staging/*/RELEASE_NOTES.md
+            release/.staging/*/THIRD_PARTY_NOTICES.md
+            release/.staging/*/ACKNOWLEDGMENTS.md
+            release/.staging/*/LICENSE
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: windows-test-diagnostics
+          path: test-results/
+          retention-days: 7

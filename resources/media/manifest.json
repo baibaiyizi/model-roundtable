@@ -1,0 +1,50 @@
+{
+  "version": "8.1.3",
+  "build": "windows-x64-builtin-shared",
+  "license": "LGPL-2.1-or-later",
+  "source": {
+    "file": "ffmpeg-8.1.3.tar.xz",
+    "url": "https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz",
+    "sha256": "7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3",
+    "commit": "1041abdc962f4cc4f394aa8de9dc5236c0c3b9e7"
+  },
+  "signature": {
+    "file": "ffmpeg-8.1.3.tar.xz.asc",
+    "url": "https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz.asc",
+    "sha256": "5f2880c7fea01f8694d30cb9d06362f77241ee67ce5926b157a226b18f08a538"
+  },
+  "signingKey": {
+    "file": "ffmpeg-devel.asc",
+    "url": "https://ffmpeg.org/ffmpeg-devel.asc",
+    "sha256": "397b3becedcd5a98769967ff1ff8501ddc89f8368b8f766e4701377d7dbaabe5",
+    "fingerprint": "FCF986EA15E6E293A5644F10B4322F04D67658D8"
+  },
+  "toolchain": {
+    "name": "w64devkit 2.9.1 x64, GCC 16.2.0",
+    "file": "w64devkit-x64-2.9.1.7z.exe",
+    "url": "https://github.com/skeeto/w64devkit/releases/download/v2.9.1/w64devkit-x64-2.9.1.7z.exe",
+    "sha256": "9208c19755cd4964b7915b9afcf02c66d493a4c870c4b3e83f6c538d9c1237a5",
+    "sourceUrl": "https://github.com/skeeto/w64devkit/releases/download/v2.9.1/source.tar",
+    "sourceSha256": "d9be3950813fef00404e9ba5d9b42fa9a229fb29b7b375053beca592d5da809c",
+    "recipe": "https://github.com/skeeto/w64devkit/tree/v2.9.1"
+  },
+  "runtimeException": {
+    "file": "COPYING.GCC-RUNTIME",
+    "url": "https://raw.githubusercontent.com/gcc-mirror/gcc/releases/gcc-16.2.0/COPYING.RUNTIME",
+    "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+  },
+  "configureFlags": [
+    "--target-os=mingw32", "--arch=x86_64", "--cc=gcc",
+    "--disable-autodetect", "--disable-network", "--disable-doc", "--disable-debug",
+    "--disable-x86asm", "--disable-static", "--enable-shared", "--disable-ffplay"
+  ],
+  "makeFlags": ["V=1", "LN_S=cp -f"],
+  "binaries": [
+    "ffmpeg.exe", "ffprobe.exe", "avcodec-62.dll", "avdevice-62.dll",
+    "avfilter-11.dll", "avformat-62.dll", "avutil-60.dll", "swresample-6.dll", "swscale-9.dll"
+  ],
+  "systemLibraries": [
+    "KERNEL32.dll", "msvcrt.dll", "SHELL32.dll", "GDI32.dll", "ole32.dll",
+    "OLEAUT32.dll", "SHLWAPI.dll", "USER32.dll", "AVICAP32.dll", "bcrypt.dll"
+  ]
+}

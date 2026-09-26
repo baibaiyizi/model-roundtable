@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "platform": "win32-x64",
+  "installed": [
+    {
+      "id": "opencode",
+      "version": "1.18.32",
+      "file": "opencode.exe",
+      "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-windows-x64-baseline.zip",
+      "sha256": "cd852831bd094c2df2eb379eb98bed7a63db7f823a7caf277c732cdac33cbdb6",
+      "license": "MIT",
+      "licenseUrl": "https://raw.githubusercontent.com/anomalyco/opencode/v1.18.32/LICENSE",
+      "binarySha256": "da86eed515d91a7b2d7da9a8230a2bd095f68a89f0cf44eb6a9217bead81fffc"
+    },
+    {
+      "id": "rg",
+      "version": "15.1.0",
+      "file": "rg.exe",
+      "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip",
+      "sha256": "124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d87493a",
+      "license": "MIT OR Unlicense",
+      "licenseUrl": "https://raw.githubusercontent.com/BurntSushi/ripgrep/15.1.0/COPYING",
+      "binarySha256": "decdd4992f3f1b9a5ef9898f1b40ab16886d579d6516b4efd3d5eaa19364e408"
+    }
+  ],
+  "optional": [
+    {
+      "id": "codex",
+      "version": "0.156.1",
+      "file": "codex.exe",
+      "archiveFile": "codex-x86_64-pc-windows-msvc.exe",
+      "url": "https://github.com/openai/codex/releases/download/rust-v0.156.1/codex-x86_64-pc-windows-msvc.exe.zip",
+      "sha256": "fcd244403adf36837778c595cf9bb3ce467171e954c1a1de14961fe184bc1550",
+      "license": "Apache-2.0",
+      "licenseUrl": "https://raw.githubusercontent.com/openai/codex/rust-v0.156.1/LICENSE"
+    },
+    {
+      "id": "claude",
+      "version": "2.1.280",
+      "file": "claude.exe",
+      "url": "https://downloads.claude.ai/claude-code-releases/2.1.280/win32-x64/claude.exe",
+      "sha256": "0e4195524b73eb77efbdf3e2b36de5322a29f0ca575dfd2d9b4f946b1d425469",
+      "license": "Anthropic commercial terms",
+      "licenseUrl": "https://code.claude.com/docs/en/legal-and-compliance"
+    }
+  ]
+}

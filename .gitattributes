@@ -1,0 +1,6 @@
+# Component manifests verify resources byte for byte, including line endings.
+resources/** -text
+resources/native-licenses/** -whitespace
+resources/licenses/** -whitespace
+resources/network/licenses/** -whitespace
+marketing/assets/licenses/** -text

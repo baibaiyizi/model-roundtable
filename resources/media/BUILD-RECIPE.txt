@@ -1,0 +1,24 @@
+Public build record: local project/profile/temporary paths are redacted; version, flags and binary hashes are unchanged.
+FFmpeg 8.1.3: unmodified upstream release, Windows x64.
+
+Source: https://ffmpeg.org/releases/ffmpeg-8.1.3.tar.xz
+SHA256: 7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3
+Source commit: 1041abdc962f4cc4f394aa8de9dc5236c0c3b9e7
+Signature fingerprint: FCF986EA15E6E293A5644F10B4322F04D67658D8
+
+Build toolchain: w64devkit 2.9.1 x64, GCC 16.2.0
+Binary: https://github.com/skeeto/w64devkit/releases/download/v2.9.1/w64devkit-x64-2.9.1.7z.exe
+SHA256: 9208c19755cd4964b7915b9afcf02c66d493a4c870c4b3e83f6c538d9c1237a5
+Toolchain source: https://github.com/skeeto/w64devkit/releases/download/v2.9.1/source.tar
+Toolchain source SHA256: d9be3950813fef00404e9ba5d9b42fa9a229fb29b7b375053beca592d5da809c
+Toolchain recipe: https://github.com/skeeto/w64devkit/tree/v2.9.1
+
+Extract the bundled source and the pinned portable toolchain. Prepend the toolchain bin directory to PATH for the build shell only. In ffmpeg-8.1.3, execute:
+
+sh ./configure --prefix=<project>/.cache/media-minimal/prefix --target-os=mingw32 --arch=x86_64 --cc=gcc --disable-autodetect --disable-network --disable-doc --disable-debug --disable-x86asm --disable-static --enable-shared --disable-ffplay
+make -j10 V=1 "LN_S=cp -f"
+make install V=1 "LN_S=cp -f"
+
+The prefix may be another absolute output path. LN_S copies the Windows link aliases without requiring symbolic-link permission; no source patches are applied. The build uses builtin codecs and no optional external libraries. GPL, nonfree, version3 and network support are disabled. Native Windows facilities and compiler runtime code remain in use. The portable compiler is a build prerequisite and is not part of the app distribution.
+
+See COPYING.LGPLv2.1, FFMPEG-LICENSE.md, COPYING.MinGW-w64-runtime.txt, COPYING.GPLv3 and COPYING.GCC-RUNTIME. Compiler runtime code is covered by its own notices and GCC Runtime Library Exception; the FFmpeg code is LGPL-2.1-or-later.

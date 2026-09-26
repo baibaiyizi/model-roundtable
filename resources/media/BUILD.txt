@@ -1,0 +1,13 @@
+Public build record: local project/profile/temporary paths are redacted; version, flags and binary hashes are unchanged.
+ffmpeg version 8.1.3 Copyright (c) 2000-2026 the FFmpeg developers
+built with gcc 16.2.0 (GCC)
+configuration: --prefix='<project>/.cache/media-minimal/prefix' --target-os=mingw32 --arch=x86_64 --cc=gcc --disable-autodetect --disable-network --disable-doc --disable-debug --disable-x86asm --disable-static --enable-shared --disable-ffplay
+libavutil      60. 26.103 / 60. 26.103
+libavcodec     62. 28.103 / 62. 28.103
+libavformat    62. 12.103 / 62. 12.103
+libavdevice    62.  3.103 / 62.  3.103
+libavfilter    11. 14.103 / 11. 14.103
+libswscale      9.  5.103 /  9.  5.103
+libswresample   6.  3.103 /  6.  3.103
+
+Exiting with exit code 0

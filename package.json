@@ -1,0 +1,188 @@
+{
+  "name": "model-roundtable",
+  "version": "1.0.0",
+  "description": "模型圆桌 — 项目、多模型讨论与 Agent 执行",
+  "main": "out/main/index.js",
+  "author": "Model Roundtable contributors",
+  "license": "MIT",
+  "private": true,
+  "repository": { "type": "git", "url": "https://github.com/baibaiyizi/model-roundtable.git" },
+  "homepage": "https://github.com/baibaiyizi/model-roundtable#readme",
+  "bugs": { "url": "https://github.com/baibaiyizi/model-roundtable/issues" },
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "tsc --noEmit && electron-vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "npm run build && playwright test",
+    "media:setup": "node scripts/setup-media.mjs",
+    "media:verify": "node scripts/verify-media.mjs",
+    "components:setup": "node scripts/setup-components.mjs",
+    "release:finalize": "node scripts/finalize-release.mjs",
+    "release:verify": "node scripts/verify-publication.mjs",
+    "licenses": "node scripts/licenses.mjs",
+    "source": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/source-archive.ps1 && node scripts/checksums.mjs",
+    "dist": "npm run network:verify && npm run media:verify && npm run build && npm run licenses && electron-builder --win nsis --x64 --publish never && node scripts/checksums.mjs",
+    "dist:dir": "npm run network:verify && npm run media:verify && npm run build && npm run licenses && electron-builder --win dir --x64 --publish never",
+    "network:setup": "node scripts/setup-network.mjs",
+    "network:verify": "node scripts/setup-network.mjs --verify"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.1.0",
+    "@modelcontextprotocol/core": "2.1.0",
+    "@modelcontextprotocol/node": "2.1.0",
+    "@modelcontextprotocol/server": "2.1.0",
+    "@mozilla/readability": "0.6.0",
+    "@napi-rs/canvas": "^1.0.9",
+    "diff": "8.0.4",
+    "eventsource-parser": "3.0.6",
+    "jsdom": "^26.1.0",
+    "mammoth": "1.12.3",
+    "openai": "7.21.0",
+    "pdfjs-dist": "6.3.289",
+    "tar": "7.5.22",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz",
+    "yaml": "2.9.1",
+    "yauzl": "3.4.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/yauzl": "3.4.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "electron": "44.4.3",
+    "electron-builder": "26.15.7",
+    "electron-vite": "5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.0.0",
+    "vitest": "5.0.1",
+    "@lancedb/lancedb": "0.39.0",
+    "apache-arrow": "18.1.0",
+    "@opencode-ai/sdk": "1.18.32",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "lucide-react": "^0.468.0"
+  },
+  "build": {
+    "appId": "org.modelroundtable.desktop",
+    "productName": "模型圆桌",
+    "directories": {
+      "output": "release/.staging/${version}"
+    },
+    "files": [
+      "out/**/*",
+      "package.json",
+      "LICENSE",
+      "resources/icon.png",
+      "THIRD_PARTY_NOTICES.md",
+      "ACKNOWLEDGMENTS.md",
+      "!node_modules/@lancedb/**",
+      "!node_modules/apache-arrow/**",
+      "!node_modules/@opencode-ai/sdk/**",
+      "!node_modules/lucide-react/**",
+      "!node_modules/react/**",
+      "!node_modules/react-dom/**",
+      "!node_modules/react-markdown/**",
+      "!node_modules/remark-gfm/**",
+      "!node_modules/@huggingface/**",
+      "!node_modules/onnxruntime-*/**",
+      "!node_modules/sharp/**",
+      "!node_modules/@img/**"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/agents",
+        "to": "agents",
+        "filter": [
+          "manifest.json",
+          "README.md"
+        ]
+      },
+      {
+        "from": "resources/documents",
+        "to": "documents",
+        "filter": [
+          "worker.py",
+          "README.md",
+          "manifest.json"
+        ]
+      },
+      {
+        "from": "resources/components",
+        "to": "components",
+        "filter": [
+          "manifest.json",
+          "README.md",
+          "SIZES.json",
+          "licenses/**"
+        ]
+      },
+      {
+        "from": "resources/media",
+        "to": "media",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "resources/licenses",
+        "to": "licenses"
+      },
+      {
+        "from": "resources/runtime",
+        "to": "runtime",
+        "filter": [
+          "manifest.json",
+          "README.md",
+          "licenses/**"
+        ]
+      },
+      {
+        "from": "resources/network",
+        "to": "network",
+        "filter": [
+          "*.zip",
+          "LICENSE",
+          "README.md",
+          "manifest.json",
+          "BUILD.md",
+          "licenses/**",
+          "build-info/**"
+        ]
+      },
+      {
+        "from": "vscode-extension",
+        "to": "editor",
+        "filter": [
+          "model-roundtable-companion-${version}.vsix"
+        ]
+      }
+    ],
+    "asarUnpack": [
+      "**/*.node",
+      "**/pdfjs-dist/**/*"
+    ],
+    "npmRebuild": false,
+    "win": {
+      "icon": "resources/icon.ico",
+      "target": "nsis",
+      "artifactName": "Model-Roundtable-${version}-win-${arch}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": false
+    },
+    "electronDist": "node_modules/electron/dist"
+  },
+  "overrides": {
+    "sharp": "0.35.4"
+  }
+}

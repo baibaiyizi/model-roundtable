@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "repository": "github.com/baibaiyizi/model-roundtable",
+  "brand": {"green":"#254a3c","paper":"#f5f3e9","sage":"#dbe6d2","ink":"#26362f","accent":"#be9d70"},
+  "cards": [
+    {"id":"01-introduction","number":"01","eyebrow":"MODEL ROUNDTABLE · 1.0.0","title":["让你的模型，","一起把事做好。"],"description":"多模型讨论 → Agent 执行 → 多模型审阅","image":"discussion","bullets":["接入自己的模型","围绕同一问题一起讨论","把方案落到真实项目文件里"],"footnote":"Windows 中文桌面应用 · 原创代码 MIT 开源","hero":true},
+    {"id":"02-discussion","number":"02","eyebrow":"THINK TOGETHER","title":["一个问题，","不止一种视角。"],"description":"圆桌 · 自由群聊 · 正式辩论","image":"setup","bullets":["先独立回答，再交叉评议","点名、插话、暂停，由你控制","保留少数意见与待验证问题"],"footnote":"多模型也会共同犯错；结论需要核验。"},
+    {"id":"03-execution","number":"03","eyebrow":"BUILD TOGETHER","title":["讨论结束，","工作才刚开始。"],"description":"执行真实文件任务，再请多个模型审阅","image":"result","frameLabel":"真实生成的 index.html · 已在浏览器验证按钮","bullets":["确认任务和完成判定","查看真实文件与变更差异","需要时最多自动修复、复核两轮"],"footnote":"执行会修改文件、运行命令，请核对任务范围。"},
+    {"id":"04-knowledge","number":"04","eyebrow":"EVIDENCE MATTERS","title":["把资料带上桌，","让讨论有据可依。"],"description":"长期知识库 · 联网检索 · 来源快照","image":"knowledge","bullets":["同一知识库可以用于不同讨论","查看实际引用的资料和位置","搜索无需先安装 MCP"],"footnote":"资料处理与搜索可能使用你配置的外部服务。"},
+    {"id":"05-network","number":"05","eyebrow":"YOUR MODELS, YOUR CHOICE","title":["不同服务，","各走各的线路。"],"description":"跟随系统 · 直连 · 指定订阅节点","image":"network","bullets":["服务与模型分别配置","兼容 Clash / Mihomo 订阅","自己选择节点，不自动更换出口"],"footnote":"不提供代理订阅；远程网关上游网络由网关负责。"},
+    {"id":"06-editor","number":"06","eyebrow":"KEEP YOUR WORK FLOWING","title":["你的编辑器，","也是讨论的入口。"],"description":"VS Code 资料互传 · 一个项目，多个聊天","image":"editor","bullets":["首次确认连接，后续直接发送","选区、未保存文本进入统一收件箱","接收资料后，由你决定下一步"],"footnote":"伴随扩展负责资料协同，第三方插件仍在 VS Code 中运行。"}
+  ]
+}

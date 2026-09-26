@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "measuredAt": "2026-09-25T18:19:15.732Z",
+  "platform": "win32-x64",
+  "note": "Measured from hash-verified official source archives and immutable installed component trees; downloads shared by components may be deduplicated.",
+  "components": [
+    {
+      "id": "documents",
+      "version": "3.13.15-2",
+      "downloadBytes": 43823562,
+      "bundledBytes": 35591,
+      "installedBytes": 74665224
+    },
+    {
+      "id": "python",
+      "version": "3.13.15",
+      "downloadBytes": 11009825,
+      "installedBytes": 21337104
+    },
+    {
+      "id": "libreoffice",
+      "version": "26.2.6.3",
+      "downloadBytes": 373252096,
+      "installedBytes": 1578049514
+    },
+    {
+      "id": "opencode",
+      "version": "1.18.32",
+      "downloadBytes": 63912458,
+      "bundledBytes": 1065,
+      "installedBytes": 184784658
+    },
+    {
+      "id": "codex",
+      "version": "0.156.1",
+      "downloadBytes": 157890284,
+      "bundledBytes": 11168,
+      "installedBytes": 466408361
+    },
+    {
+      "id": "claude",
+      "version": "2.1.280",
+      "downloadBytes": 237100192,
+      "installedBytes": 237100192
+    },
+    {
+      "id": "node",
+      "version": "24.21.0",
+      "downloadBytes": 37618919,
+      "installedBytes": 106986507
+    },
+    {
+      "id": "git",
+      "version": "2.55.0.5",
+      "downloadBytes": 38989688,
+      "installedBytes": 94375970
+    },
+    {
+      "id": "uv",
+      "version": "0.12.18",
+      "downloadBytes": 17891221,
+      "bundledBytes": 12434,
+      "installedBytes": 43170338
+    },
+    {
+      "id": "lancedb",
+      "version": "0.39.0",
+      "downloadBytes": 132704085,
+      "bundledBytes": 27449,
+      "installedBytes": 328313925
+    },
+    {
+      "id": "skills",
+      "version": "1.7.0",
+      "downloadBytes": 849384,
+      "installedBytes": 4250495
+    },
+    {
+      "id": "mihomo",
+      "version": "1.19.31",
+      "downloadBytes": 0,
+      "bundledBytes": 22460803,
+      "installedBytes": 61105152
+    }
+  ]
+}

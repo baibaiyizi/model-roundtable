@@ -1,0 +1,99 @@
+{
+  "name": "model-roundtable-companion",
+  "displayName": "模型圆桌伴随扩展",
+  "description": "把本机 VS Code 的选区、文件和 Office 资料送到模型圆桌，并接收 Markdown 结果。",
+  "version": "1.0.0",
+  "publisher": "model-roundtable",
+  "license": "MIT",
+  "private": true,
+  "repository": { "type": "git", "url": "https://github.com/baibaiyizi/model-roundtable.git", "directory": "vscode-extension" },
+  "homepage": "https://github.com/baibaiyizi/model-roundtable#readme",
+  "bugs": { "url": "https://github.com/baibaiyizi/model-roundtable/issues" },
+  "engines": {
+    "vscode": "^1.138.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": false,
+      "description": "资料发送需要可信的本机 VS Code。无需绑定项目或打开文件夹。"
+    },
+    "virtualWorkspaces": false
+  },
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/src/extension.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "npm run build && node --test out/test/client.test.js out/test/companion.test.js",
+    "test:host": "npm run build && node scripts/test-host.cjs",
+    "test:app-host": "npm run build && node scripts/test-app-host.cjs",
+    "package": "npm run build && vsce package --no-dependencies"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "modelRoundtable.connect",
+        "title": "模型圆桌：重新连接应用"
+      },
+      {
+        "command": "modelRoundtable.sendSelection",
+        "title": "模型圆桌：发送选中文本"
+      },
+      {
+        "command": "modelRoundtable.sendFile",
+        "title": "模型圆桌：发送当前文本文件"
+      },
+      {
+        "command": "modelRoundtable.importFiles",
+        "title": "模型圆桌：导入资料到知识库"
+      },
+      {
+        "command": "modelRoundtable.retry",
+        "title": "模型圆桌：重试未确认传输"
+      },
+      {
+        "command": "modelRoundtable.status",
+        "title": "模型圆桌：查看连接状态"
+      },
+      {
+        "command": "modelRoundtable.disconnect",
+        "title": "模型圆桌：撤销连接"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "modelRoundtable.sendSelection",
+          "when": "editorHasSelection && (resourceScheme == file || resourceScheme == untitled) && modelRoundtable.canSend",
+          "group": "9_roundtable@1"
+        },
+        {
+          "command": "modelRoundtable.sendFile",
+          "when": "(resourceScheme == file || resourceScheme == untitled) && modelRoundtable.canSend",
+          "group": "9_roundtable@2"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "modelRoundtable.importFiles",
+          "when": "resourceScheme == file && modelRoundtable.canSend && resourceExtname =~ /\\.(pdf|docx|xlsx|xls|xlsm|csv|pptx)$/i",
+          "group": "9_roundtable@1"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/node": "24.10.13",
+    "@types/vscode": "1.138.0",
+    "@vscode/test-electron": "3.1.0",
+    "@vscode/vsce": "4.0.0",
+    "typescript": "5.9.3"
+  }
+}

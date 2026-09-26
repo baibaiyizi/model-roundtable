@@ -1,0 +1,700 @@
+{
+  "schema": 1,
+  "platform": "win32-x64",
+  "components": [
+    {
+      "id": "documents",
+      "name": "文档编辑 · Python 与字体",
+      "version": "3.13.15-2",
+      "executable": "python/python.exe",
+      "recipe": "documents",
+      "licenses": [
+        "https://docs.python.org/3/license.html",
+        "https://openfontlicense.org/"
+      ],
+      "artifacts": [
+        {
+          "filename": "python-3.13.15-embed-amd64.zip",
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-embed-amd64.zip",
+          "sha256": "d1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf",
+          "format": "zip",
+          "destination": "python"
+        },
+        {
+          "filename": "charset_normalizer-3.5.1-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/8a/33/56d97ade41c8db611e727168c52ae46c9224c362ec28d4b65d7e9869e8da/charset_normalizer-3.5.1-cp313-cp313-win_amd64.whl",
+          "sha256": "aea996a6aba25260827c9ea511d1addfde2da9eb686ac961838509086188b7e6",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "defusedxml-0.7.1-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl",
+          "sha256": "a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "et_xmlfile-2.0.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/c1/8b/5fe2cc11fee489817272089c4203e679c63b570a5aaeb18d852ae3cbba6a/et_xmlfile-2.0.0-py3-none-any.whl",
+          "sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "lxml-6.1.3-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/c0/28/e46a7702bd95e9043291f7c3539b6184cba66f96cea9936f20939b284eeb/lxml-6.1.3-cp313-cp313-win_amd64.whl",
+          "sha256": "e477aca0bc0d19f3b4ae9e4f2a1cfd687c31bf772d78734910658186b40b2477",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "openpyxl-3.1.5-py2.py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/c0/da/977ded879c29cbd04de313843e76868e6e13408a94ed6b987245dc7c8506/openpyxl-3.1.5-py2.py3-none-any.whl",
+          "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "pillow-12.3.0-cp313-cp313-win_amd64.whl",
+          "url": "https://files.pythonhosted.org/packages/a6/9b/7a58e61d62be561da3a356fe2384d4059a6345fc130e23ef1c36a5b81d24/pillow-12.3.0-cp313-cp313-win_amd64.whl",
+          "sha256": "1cca606cd25738df4ed873d5ad46bbdb3d83b5cbca291f6b4ff13a4df6b0bbe8",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "pypdf-6.19.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/3c/2c/c43c03eaf630435f023f1dc61ec4a4a78951ad5530a62c71cc89bde307b7/pypdf-6.19.0-py3-none-any.whl",
+          "sha256": "7e5d6e730e7dae87d560a2cee218b852f6498c8be61966f3cd02ead971e48d14",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "python_docx-1.2.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d0/00/1e03a4989fa5795da308cd774f05b704ace555a70f9bf9d3be057b680bcf/python_docx-1.2.0-py3-none-any.whl",
+          "sha256": "3fd478f3250fbbbfd3b94fe1e985955737c145627498896a8a6bf81f4baf66c7",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "python_pptx-1.0.2-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/d9/4f/00be2196329ebbff56ce564aa94efb0fbc828d00de250b1980de1a34ab49/python_pptx-1.0.2-py3-none-any.whl",
+          "sha256": "160838e0b8565a8b1f67947675886e9fea18aa5e795db7ae531606d68e785cba",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "reportlab-5.0.1-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/db/cb/dacbc268cb68d0428ea2cbd85266195a9ab3e677449589ddae59bd7542ac/reportlab-5.0.1-py3-none-any.whl",
+          "sha256": "1c36e6bb0e71780c72331eba60da7f602e8d4389a8723825af71342e49d791e8",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "typing_extensions-4.16.0-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl",
+          "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "xlsxwriter-3.2.9-py3-none-any.whl",
+          "url": "https://files.pythonhosted.org/packages/3a/0c/3662f4a66880196a590b202f0db82d919dd2f89e99a27fadef91c4a33d41/xlsxwriter-3.2.9-py3-none-any.whl",
+          "sha256": "9a5db42bc5dff014806c58a20b9eae7322a134abb6fce3c92c181bfb275ec5b3",
+          "format": "zip",
+          "destination": "python/Lib/site-packages"
+        },
+        {
+          "filename": "NotoSansSC.ttf",
+          "url": "https://raw.githubusercontent.com/google/fonts/a85815a42757630ce188fdad368c2dfc444d4773/ofl/notosanssc/NotoSansSC%5Bwght%5D.ttf",
+          "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+          "format": "file",
+          "destination": "fonts/NotoSansSC.ttf"
+        },
+        {
+          "filename": "OFL.txt",
+          "url": "https://raw.githubusercontent.com/google/fonts/a85815a42757630ce188fdad368c2dfc444d4773/ofl/notosanssc/OFL.txt",
+          "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+          "format": "file",
+          "destination": "fonts/OFL.txt"
+        },
+        {
+          "filename": "worker.py",
+          "url": "resource:documents/worker.py",
+          "sha256": "1a99f126a05d08c86928c6f5c5452c7c13cb69b79cba7a7cb026cd29bec64d65",
+          "format": "file",
+          "destination": "worker.py"
+        }
+      ]
+    },
+    {
+      "id": "python",
+      "name": "扩展专用 Python",
+      "version": "3.13.15",
+      "executable": "python.exe",
+      "recipe": "python",
+      "licenses": [
+        "https://docs.python.org/3/license.html"
+      ],
+      "artifacts": [
+        {
+          "filename": "python-3.13.15-embed-amd64.zip",
+          "url": "https://www.python.org/ftp/python/3.13.15/python-3.13.15-embed-amd64.zip",
+          "sha256": "d1f04d990aee1253d8569e8e5104e30fa9f5fa830899f14843448872d936a2cf",
+          "format": "zip",
+          "destination": "."
+        }
+      ]
+    },
+    {
+      "id": "libreoffice",
+      "name": "Office 文档预览",
+      "version": "26.2.6.3",
+      "executable": "program/soffice.com",
+      "recipe": "libreoffice",
+      "licenses": [
+        "https://www.libreoffice.org/about-us/licenses/"
+      ],
+      "artifacts": [
+        {
+          "filename": "LibreOffice_26.2.6_Win_x86-64.msi",
+          "url": "https://download.documentfoundation.org/libreoffice/stable/26.2.6/win/x86_64/LibreOffice_26.2.6_Win_x86-64.msi",
+          "sha256": "f9877032fd908beb9c0ddf06df4af5c2e85f419c42e14876c4cce5aae5fb2660",
+          "format": "msi",
+          "destination": "."
+        }
+      ]
+    },
+    {
+      "id": "opencode",
+      "name": "OpenCode 执行与项目搜索",
+      "version": "1.18.32",
+      "executable": "opencode/opencode.exe",
+      "licenses": [
+        "https://raw.githubusercontent.com/anomalyco/opencode/v1.18.32/LICENSE",
+        "https://raw.githubusercontent.com/BurntSushi/ripgrep/15.1.0/COPYING"
+      ],
+      "artifacts": [
+        {
+          "filename": "opencode-windows-x64-baseline.zip",
+          "url": "https://github.com/anomalyco/opencode/releases/download/v1.18.32/opencode-windows-x64-baseline.zip",
+          "sha256": "cd852831bd094c2df2eb379eb98bed7a63db7f823a7caf277c732cdac33cbdb6",
+          "format": "zip",
+          "destination": "opencode",
+          "pick": "opencode.exe"
+        },
+        {
+          "filename": "ripgrep-15.1.0-x86_64-pc-windows-msvc.zip",
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip",
+          "sha256": "124510b94b6baa3380d051fdf4650eaa80a302c876d611e9dba0b2e18d87493a",
+          "format": "zip",
+          "destination": "rg",
+          "pick": "rg.exe"
+        },
+        {
+          "filename": "opencode-LICENSE.txt",
+          "url": "resource:components/licenses/opencode-LICENSE.txt",
+          "sha256": "625f0f619133f89bbbb2abe37369613dfa1885eba1e50d02170deb62bb42cb6b",
+          "format": "file",
+          "destination": "licenses/opencode-LICENSE.txt"
+        }
+      ]
+    },
+    {
+      "id": "codex",
+      "name": "Codex 官方后台",
+      "version": "0.156.1",
+      "executable": "codex-x86_64-pc-windows-msvc.exe",
+      "licenses": [
+        "https://raw.githubusercontent.com/openai/codex/rust-v0.156.1/LICENSE"
+      ],
+      "artifacts": [
+        {
+          "filename": "codex-x86_64-pc-windows-msvc.exe.zip",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.156.1/codex-x86_64-pc-windows-msvc.exe.zip",
+          "sha256": "fcd244403adf36837778c595cf9bb3ce467171e954c1a1de14961fe184bc1550",
+          "format": "zip",
+          "destination": ".",
+          "pick": "codex-x86_64-pc-windows-msvc.exe"
+        },
+        {
+          "filename": "codex-LICENSE.txt",
+          "url": "resource:components/licenses/codex-LICENSE.txt",
+          "sha256": "d17f227e4df5da1600391338865ce0f3055211760a36688f816941d58232d8dc",
+          "format": "file",
+          "destination": "licenses/codex-LICENSE.txt"
+        },
+        {
+          "filename": "codex-NOTICE.txt",
+          "url": "resource:components/licenses/codex-NOTICE.txt",
+          "sha256": "9d71575ecfd9a843fc1677b0efb08053c6ba9fd686a0de1a6f5382fd3c220915",
+          "format": "file",
+          "destination": "licenses/codex-NOTICE.txt"
+        }
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude Code 官方后台",
+      "version": "2.1.280",
+      "executable": "claude.exe",
+      "licenses": [
+        "https://code.claude.com/docs/en/legal-and-compliance"
+      ],
+      "artifacts": [
+        {
+          "filename": "claude.exe",
+          "url": "https://downloads.claude.ai/claude-code-releases/2.1.280/win32-x64/claude.exe",
+          "sha256": "0e4195524b73eb77efbdf3e2b36de5322a29f0ca575dfd2d9b4f946b1d425469",
+          "format": "file",
+          "destination": "claude.exe"
+        }
+      ]
+    },
+    {
+      "id": "node",
+      "name": "Node.js 与 npm",
+      "version": "24.21.0",
+      "executable": "node.exe",
+      "npmCli": "node_modules/npm/bin/npm-cli.js",
+      "licenses": [
+        "https://github.com/nodejs/node/blob/v24.21.0/LICENSE"
+      ],
+      "artifacts": [
+        {
+          "filename": "node-v24.21.0-win-x64.zip",
+          "url": "https://nodejs.org/dist/v24.21.0/node-v24.21.0-win-x64.zip",
+          "sha256": "158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e541",
+          "format": "zip",
+          "destination": ".",
+          "strip": 1
+        }
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git 项目与 Skill 下载",
+      "version": "2.55.0.5",
+      "executable": "cmd/git.exe",
+      "licenses": [
+        "https://github.com/git-for-windows/git/blob/v2.55.0.windows.5/COPYING"
+      ],
+      "artifacts": [
+        {
+          "filename": "MinGit-2.55.0.5-64-bit.zip",
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.5/MinGit-2.55.0.5-64-bit.zip",
+          "sha256": "56d7b226b7693196cfc71fef26568f536c4a021ab6c37ff2db4287bed908e96e",
+          "format": "zip",
+          "destination": "."
+        }
+      ]
+    },
+    {
+      "id": "uv",
+      "name": "Python 扩展环境管理",
+      "version": "0.12.18",
+      "executable": "uv.exe",
+      "licenses": [
+        "https://github.com/astral-sh/uv/blob/0.12.18/LICENSE-MIT"
+      ],
+      "artifacts": [
+        {
+          "filename": "uv-x86_64-pc-windows-msvc.zip",
+          "url": "https://github.com/astral-sh/uv/releases/download/0.12.18/uv-x86_64-pc-windows-msvc.zip",
+          "sha256": "cae6a3bc25239f83dffb467a4b180508d9da23986c04639ebfa44e43e6a84bff",
+          "format": "zip",
+          "destination": ".",
+          "pick": "uv.exe"
+        },
+        {
+          "filename": "uv-LICENSE-MIT.txt",
+          "url": "resource:components/licenses/uv-LICENSE-MIT.txt",
+          "sha256": "860e3d7a86b84e6a7012c7a635fc64df475cebc6cce34dfeb73a5982ec58176c",
+          "format": "file",
+          "destination": "licenses/uv-LICENSE-MIT.txt"
+        },
+        {
+          "filename": "uv-LICENSE-APACHE.txt",
+          "url": "resource:components/licenses/uv-LICENSE-APACHE.txt",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "format": "file",
+          "destination": "licenses/uv-LICENSE-APACHE.txt"
+        }
+      ]
+    },
+    {
+      "id": "lancedb",
+      "name": "长期知识库向量索引",
+      "version": "0.39.0",
+      "executable": "node_modules/@lancedb/lancedb/dist/index.js",
+      "licenses": [
+        "https://github.com/lancedb/lancedb/blob/v0.39.0/LICENSE",
+        "https://learn.microsoft.com/en-us/visualstudio/releases/2022/redistribution"
+      ],
+      "artifacts": [
+        {
+          "filename": "lancedb-lancedb-0.39.0.tgz",
+          "url": "https://registry.npmjs.org/@lancedb/lancedb/-/lancedb-0.39.0.tgz",
+          "integrity": "sha512-mcHi7/G2knZVj7OUya1vcMAjbHEqcait31cXINdUzQrru+ulo9Rks35T5XQpHQXI/P+6o10azATBtNa0u2tDCA==",
+          "format": "tar",
+          "destination": "node_modules/@lancedb/lancedb",
+          "strip": 1
+        },
+        {
+          "filename": "opentelemetry-api-1.9.1.tgz",
+          "url": "https://registry.npmjs.org/@opentelemetry/api/-/api-1.9.1.tgz",
+          "integrity": "sha512-gLyJlPHPZYdAk1JENA9LeHejZe1Ti77/pTeFm/nMXmQH/HFZlcS/O2XJB+L8fkbrNSqhdtlvjBVjxwUYanNH5Q==",
+          "format": "tar",
+          "destination": "node_modules/@opentelemetry/api",
+          "strip": 1
+        },
+        {
+          "filename": "reflect-metadata-0.2.2.tgz",
+          "url": "https://registry.npmjs.org/reflect-metadata/-/reflect-metadata-0.2.2.tgz",
+          "integrity": "sha512-urBwgfrvVP/eAyXx4hluJivBKzuEbSQs9rKWCrCkbSxNv8mxPcUZKeuoF3Uy4mJl3Lwprp6yy5/39VWigZ4K6Q==",
+          "format": "tar",
+          "destination": "node_modules/reflect-metadata",
+          "strip": 1
+        },
+        {
+          "filename": "lancedb-lancedb-win32-x64-msvc-0.39.0.tgz",
+          "url": "https://registry.npmjs.org/@lancedb/lancedb-win32-x64-msvc/-/lancedb-win32-x64-msvc-0.39.0.tgz",
+          "integrity": "sha512-HE8aD11DSElESGYBaTuy9Pvcapg1vRIK2qAsZVGPGN1AVUOI3j304UdVJiHQqY+cSwPs0DvBv9rkbsewY9XAOQ==",
+          "format": "tar",
+          "destination": "node_modules/@lancedb/lancedb-win32-x64-msvc",
+          "strip": 1
+        },
+        {
+          "filename": "apache-arrow-18.1.0.tgz",
+          "url": "https://registry.npmjs.org/apache-arrow/-/apache-arrow-18.1.0.tgz",
+          "integrity": "sha512-v/ShMp57iBnBp4lDgV8Jx3d3Q5/Hac25FWmQ98eMahUiHPXcvwIMKJD0hBIgclm/FCG+LwPkAKtkRO1O/W0YGg==",
+          "format": "tar",
+          "destination": "node_modules/apache-arrow",
+          "strip": 1
+        },
+        {
+          "filename": "swc-helpers-0.5.23.tgz",
+          "url": "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.23.tgz",
+          "integrity": "sha512-5lSsMOTXURePglDfvuAQUqkGek9Hg2kksOYay2m0+XR++b2NWYL/4sWyuvVBIs8oKnJaxkdi9whaL/sqN13afw==",
+          "format": "tar",
+          "destination": "node_modules/@swc/helpers",
+          "strip": 1
+        },
+        {
+          "filename": "tslib-2.8.1.tgz",
+          "url": "https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz",
+          "integrity": "sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==",
+          "format": "tar",
+          "destination": "node_modules/tslib",
+          "strip": 1
+        },
+        {
+          "filename": "types-command-line-args-5.2.3.tgz",
+          "url": "https://registry.npmjs.org/@types/command-line-args/-/command-line-args-5.2.3.tgz",
+          "integrity": "sha512-uv0aG6R0Y8WHZLTamZwtfsDLVRnOa+n+n5rEvFWL5Na5gZ8V2Teab/duDPFzIIIhs9qizDpcavCusCLJZu62Kw==",
+          "format": "tar",
+          "destination": "node_modules/@types/command-line-args",
+          "strip": 1
+        },
+        {
+          "filename": "types-command-line-usage-5.0.4.tgz",
+          "url": "https://registry.npmjs.org/@types/command-line-usage/-/command-line-usage-5.0.4.tgz",
+          "integrity": "sha512-BwR5KP3Es/CSht0xqBcUXS3qCAUVXwpRKsV2+arxeb65atasuXG9LykC9Ab10Cw3s2raH92ZqOeILaQbsB2ACg==",
+          "format": "tar",
+          "destination": "node_modules/@types/command-line-usage",
+          "strip": 1
+        },
+        {
+          "filename": "types-node-20.19.43.tgz",
+          "url": "https://registry.npmjs.org/@types/node/-/node-20.19.43.tgz",
+          "integrity": "sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==",
+          "format": "tar",
+          "destination": "node_modules/apache-arrow/node_modules/@types/node",
+          "strip": 1
+        },
+        {
+          "filename": "undici-types-6.21.0.tgz",
+          "url": "https://registry.npmjs.org/undici-types/-/undici-types-6.21.0.tgz",
+          "integrity": "sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==",
+          "format": "tar",
+          "destination": "node_modules/apache-arrow/node_modules/undici-types",
+          "strip": 1
+        },
+        {
+          "filename": "command-line-args-5.2.1.tgz",
+          "url": "https://registry.npmjs.org/command-line-args/-/command-line-args-5.2.1.tgz",
+          "integrity": "sha512-H4UfQhZyakIjC74I9d34fGYDwk3XpSr17QhEd0Q3I9Xq1CETHo4Hcuo87WyWHpAF1aSLjLRf5lD9ZGX2qStUvg==",
+          "format": "tar",
+          "destination": "node_modules/command-line-args",
+          "strip": 1
+        },
+        {
+          "filename": "array-back-3.1.0.tgz",
+          "url": "https://registry.npmjs.org/array-back/-/array-back-3.1.0.tgz",
+          "integrity": "sha512-TkuxA4UCOvxuDK6NZYXCalszEzj+TLszyASooky+i742l9TqsOdYCMJJupxRic61hwquNtppB3hgcuq9SVSH1Q==",
+          "format": "tar",
+          "destination": "node_modules/array-back",
+          "strip": 1
+        },
+        {
+          "filename": "find-replace-3.0.0.tgz",
+          "url": "https://registry.npmjs.org/find-replace/-/find-replace-3.0.0.tgz",
+          "integrity": "sha512-6Tb2myMioCAgv5kfvP5/PkZZ/ntTpVK39fHY7WkWBgvbeE+VHd/tZuZ4mrC+bxh4cfOZeYKVPaJIZtZXV7GNCQ==",
+          "format": "tar",
+          "destination": "node_modules/find-replace",
+          "strip": 1
+        },
+        {
+          "filename": "lodash.camelcase-4.3.0.tgz",
+          "url": "https://registry.npmjs.org/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz",
+          "integrity": "sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==",
+          "format": "tar",
+          "destination": "node_modules/lodash.camelcase",
+          "strip": 1
+        },
+        {
+          "filename": "typical-4.0.0.tgz",
+          "url": "https://registry.npmjs.org/typical/-/typical-4.0.0.tgz",
+          "integrity": "sha512-VAH4IvQ7BDFYglMd7BPRDfLgxZZX4O4TFcRDA6EN5X7erNJJq+McIEp8np9aVtxrCJ6qx4GTYVfOWNjcqwZgRw==",
+          "format": "tar",
+          "destination": "node_modules/typical",
+          "strip": 1
+        },
+        {
+          "filename": "command-line-usage-7.0.4.tgz",
+          "url": "https://registry.npmjs.org/command-line-usage/-/command-line-usage-7.0.4.tgz",
+          "integrity": "sha512-85UdvzTNx/+s5CkSgBm/0hzP80RFHAa7PsfeADE5ezZF3uHz3/Tqj9gIKGT9PTtpycc3Ua64T0oVulGfKxzfqg==",
+          "format": "tar",
+          "destination": "node_modules/command-line-usage",
+          "strip": 1
+        },
+        {
+          "filename": "array-back-6.2.3.tgz",
+          "url": "https://registry.npmjs.org/array-back/-/array-back-6.2.3.tgz",
+          "integrity": "sha512-SGDvmg6QTYiTxCBkYVmThcoa67uLl35pyzRHdpCGBOcqFy6BtwnphoFPk7LhJshD+Yk1Kt35WGWeZPTgwR4Fhw==",
+          "format": "tar",
+          "destination": "node_modules/command-line-usage/node_modules/array-back",
+          "strip": 1
+        },
+        {
+          "filename": "chalk-template-0.4.0.tgz",
+          "url": "https://registry.npmjs.org/chalk-template/-/chalk-template-0.4.0.tgz",
+          "integrity": "sha512-/ghrgmhfY8RaSdeo43hNXxpoHAtxdbskUHjPpfqUWGttFgycUhYPGx3YZBCnUCvOa7Doivn1IZec3DEGFoMgLg==",
+          "format": "tar",
+          "destination": "node_modules/chalk-template",
+          "strip": 1
+        },
+        {
+          "filename": "chalk-4.1.2.tgz",
+          "url": "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz",
+          "integrity": "sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==",
+          "format": "tar",
+          "destination": "node_modules/chalk",
+          "strip": 1
+        },
+        {
+          "filename": "ansi-styles-4.3.0.tgz",
+          "url": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
+          "integrity": "sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==",
+          "format": "tar",
+          "destination": "node_modules/ansi-styles",
+          "strip": 1
+        },
+        {
+          "filename": "color-convert-2.0.1.tgz",
+          "url": "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz",
+          "integrity": "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==",
+          "format": "tar",
+          "destination": "node_modules/color-convert",
+          "strip": 1
+        },
+        {
+          "filename": "color-name-1.1.4.tgz",
+          "url": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
+          "integrity": "sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==",
+          "format": "tar",
+          "destination": "node_modules/color-name",
+          "strip": 1
+        },
+        {
+          "filename": "supports-color-7.2.0.tgz",
+          "url": "https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz",
+          "integrity": "sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==",
+          "format": "tar",
+          "destination": "node_modules/supports-color",
+          "strip": 1
+        },
+        {
+          "filename": "has-flag-4.0.0.tgz",
+          "url": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+          "integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==",
+          "format": "tar",
+          "destination": "node_modules/has-flag",
+          "strip": 1
+        },
+        {
+          "filename": "table-layout-4.1.1.tgz",
+          "url": "https://registry.npmjs.org/table-layout/-/table-layout-4.1.1.tgz",
+          "integrity": "sha512-iK5/YhZxq5GO5z8wb0bY1317uDF3Zjpha0QFFLA8/trAoiLbQD0HUbMesEaxyzUgDxi2QlcbM8IvqOlEjgoXBA==",
+          "format": "tar",
+          "destination": "node_modules/table-layout",
+          "strip": 1
+        },
+        {
+          "filename": "array-back-6.2.3.tgz",
+          "url": "https://registry.npmjs.org/array-back/-/array-back-6.2.3.tgz",
+          "integrity": "sha512-SGDvmg6QTYiTxCBkYVmThcoa67uLl35pyzRHdpCGBOcqFy6BtwnphoFPk7LhJshD+Yk1Kt35WGWeZPTgwR4Fhw==",
+          "format": "tar",
+          "destination": "node_modules/table-layout/node_modules/array-back",
+          "strip": 1
+        },
+        {
+          "filename": "wordwrapjs-5.1.1.tgz",
+          "url": "https://registry.npmjs.org/wordwrapjs/-/wordwrapjs-5.1.1.tgz",
+          "integrity": "sha512-0yweIbkINJodk27gX9LBGMzyQdBDan3s/dEAiwBOj+Mf0PPyWL6/rikalkv8EeD0E8jm4o5RXEOrFTP3NXbhJg==",
+          "format": "tar",
+          "destination": "node_modules/wordwrapjs",
+          "strip": 1
+        },
+        {
+          "filename": "typical-7.3.0.tgz",
+          "url": "https://registry.npmjs.org/typical/-/typical-7.3.0.tgz",
+          "integrity": "sha512-ya4mg/30vm+DOWfBg4YK3j2WD6TWtRkCbasOJr40CseYENzCUby/7rIvXA99JGsQHeNxLbnXdyLLxKSv3tauFw==",
+          "format": "tar",
+          "destination": "node_modules/command-line-usage/node_modules/typical",
+          "strip": 1
+        },
+        {
+          "filename": "flatbuffers-24.12.23.tgz",
+          "url": "https://registry.npmjs.org/flatbuffers/-/flatbuffers-24.12.23.tgz",
+          "integrity": "sha512-dLVCAISd5mhls514keQzmEG6QHmUUsNuWsb4tFafIUwvvgDjXhtfAYSKOzt5SWOy+qByV5pbsDZ+Vb7HUOBEdA==",
+          "format": "tar",
+          "destination": "node_modules/flatbuffers",
+          "strip": 1
+        },
+        {
+          "filename": "json-bignum-0.0.3.tgz",
+          "url": "https://registry.npmjs.org/json-bignum/-/json-bignum-0.0.3.tgz",
+          "integrity": "sha512-2WHyXj3OfHSgNyuzDbSxI1w2jgw5gkWSWhS7Qg4bWXx1nLk3jnbwfUeS0PSba3IzpTUWdHxBieELUzXRjQB2zg==",
+          "format": "tar",
+          "destination": "node_modules/json-bignum",
+          "strip": 1
+        },
+        {
+          "filename": "VC_redist.x64.exe",
+          "url": "https://download.visualstudio.microsoft.com/download/pr/bd1c8d9d-ba95-4eee-bc6e-df1fcc876373/CC0FF0EB1DC3F5188AE6300FAEF32BF5BEEBA4BDD6E8E445A9184072096B713B/VC_redist.x64.exe",
+          "sha256": "cc0ff0eb1dc3f5188ae6300faef32bf5beeba4bdd6e8e445a9184072096b713b",
+          "format": "vc-redist",
+          "destination": "node_modules/@lancedb/lancedb-win32-x64-msvc"
+        },
+        {
+          "filename": "LICENSE-en.rtf",
+          "url": "resource:runtime/licenses/LICENSE-en.rtf",
+          "sha256": "8099dc3cf9502c335da829e5c755948a12e3e6de490eb492a99deb673d883d8b",
+          "format": "file",
+          "destination": "licenses/VC-LICENSE-en.rtf"
+        },
+        {
+          "filename": "LICENSE-zh-CN.rtf",
+          "url": "resource:runtime/licenses/LICENSE-zh-CN.rtf",
+          "sha256": "a808b4933ce3b3e0893504dbef43ebf90b8b567f94bd6481b6315ed9141e1b11",
+          "format": "file",
+          "destination": "licenses/VC-LICENSE-zh-CN.rtf"
+        }
+      ]
+    },
+    {
+      "id": "skills",
+      "name": "Skills 官方 CLI",
+      "version": "1.7.0",
+      "executable": "node_modules/skills/bin/cli.mjs",
+      "licenses": [
+        "https://github.com/vercel-labs/skills/blob/v1.7.0/LICENSE"
+      ],
+      "artifacts": [
+        {
+          "filename": "skills-1.7.0.tgz",
+          "url": "https://registry.npmjs.org/skills/-/skills-1.7.0.tgz",
+          "integrity": "sha512-OfePnDft+Xt9/tCoHdCUe5fkM8i+Q3QOSQO53hm7mKtsXyvc+CKOAAliVWZ484HS3cWx+6r+ob0AArixs3jYXw==",
+          "format": "tar",
+          "destination": "node_modules/skills",
+          "strip": 1
+        },
+        {
+          "filename": "tar-7.5.22.tgz",
+          "url": "https://registry.npmjs.org/tar/-/tar-7.5.22.tgz",
+          "integrity": "sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==",
+          "format": "tar",
+          "destination": "node_modules/tar",
+          "strip": 1
+        },
+        {
+          "filename": "isaacs-fs-minipass-4.0.1.tgz",
+          "url": "https://registry.npmjs.org/@isaacs/fs-minipass/-/fs-minipass-4.0.1.tgz",
+          "integrity": "sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==",
+          "format": "tar",
+          "destination": "node_modules/@isaacs/fs-minipass",
+          "strip": 1
+        },
+        {
+          "filename": "minipass-7.1.3.tgz",
+          "url": "https://registry.npmjs.org/minipass/-/minipass-7.1.3.tgz",
+          "integrity": "sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==",
+          "format": "tar",
+          "destination": "node_modules/minipass",
+          "strip": 1
+        },
+        {
+          "filename": "chownr-3.0.0.tgz",
+          "url": "https://registry.npmjs.org/chownr/-/chownr-3.0.0.tgz",
+          "integrity": "sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==",
+          "format": "tar",
+          "destination": "node_modules/chownr",
+          "strip": 1
+        },
+        {
+          "filename": "minizlib-3.1.0.tgz",
+          "url": "https://registry.npmjs.org/minizlib/-/minizlib-3.1.0.tgz",
+          "integrity": "sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==",
+          "format": "tar",
+          "destination": "node_modules/minizlib",
+          "strip": 1
+        },
+        {
+          "filename": "yallist-5.0.0.tgz",
+          "url": "https://registry.npmjs.org/yallist/-/yallist-5.0.0.tgz",
+          "integrity": "sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==",
+          "format": "tar",
+          "destination": "node_modules/tar/node_modules/yallist",
+          "strip": 1
+        },
+        {
+          "filename": "yaml-2.9.1.tgz",
+          "url": "https://registry.npmjs.org/yaml/-/yaml-2.9.1.tgz",
+          "integrity": "sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==",
+          "format": "tar",
+          "destination": "node_modules/yaml",
+          "strip": 1
+        }
+      ]
+    },
+    {
+      "id": "mihomo",
+      "name": "内置订阅代理 · Mihomo",
+      "version": "1.19.31",
+      "executable": "mihomo-windows-amd64-compatible.exe",
+      "licenses": [
+        "https://github.com/MetaCubeX/mihomo/blob/v1.19.31/LICENSE"
+      ],
+      "artifacts": [
+        {
+          "filename": "mihomo-windows-amd64-compatible-v1.19.31.zip",
+          "url": "resource:network/mihomo-windows-amd64-compatible-v1.19.31.zip",
+          "sha256": "93d14e9a13b49b2f2d256202d02cc8d14a7c4695edf084cae0f941986bc9c218",
+          "format": "zip",
+          "destination": "."
+        }
+      ]
+    }
+  ]
+}

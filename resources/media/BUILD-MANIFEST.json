@@ -1,0 +1,149 @@
+{
+  "inputsSha256": "7c71e2ee55d71b24e7f50bfee78be32603150d56fadf0eb1aac3b631bc38e377",
+  "binaries": [
+    {
+      "file": "ffmpeg.exe",
+      "bytes": 474112,
+      "sha256": "10e525c3032d375dfab2d80edf01ee8534b3120ec77d06b44d400d1e0820e66a",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "SHELL32.dll",
+        "avcodec-62.dll",
+        "avdevice-62.dll",
+        "avfilter-11.dll",
+        "avformat-62.dll",
+        "avutil-60.dll",
+        "swresample-6.dll",
+        "swscale-9.dll"
+      ]
+    },
+    {
+      "file": "ffprobe.exe",
+      "bytes": 215040,
+      "sha256": "4539d85b5f03ad44de8507f817383d35ebeadbdf5e875bba83755ed402c55e63",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "SHELL32.dll",
+        "avcodec-62.dll",
+        "avdevice-62.dll",
+        "avfilter-11.dll",
+        "avformat-62.dll",
+        "avutil-60.dll",
+        "swresample-6.dll",
+        "swscale-9.dll"
+      ]
+    },
+    {
+      "file": "avcodec-62.dll",
+      "bytes": 16744960,
+      "sha256": "4513c706952c1723a4d1ed32e5ccb87efb0ecc217713f2ce9573722fcb275212",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "avutil-60.dll",
+        "swresample-6.dll"
+      ]
+    },
+    {
+      "file": "avdevice-62.dll",
+      "bytes": 153600,
+      "sha256": "87af9c89286daa834c8e13b05d8918451d662aa9ef80fd3389b6a9c2ff345652",
+      "imports": [
+        "GDI32.dll",
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "ole32.dll",
+        "OLEAUT32.dll",
+        "SHLWAPI.dll",
+        "USER32.dll",
+        "AVICAP32.dll",
+        "avcodec-62.dll",
+        "avfilter-11.dll",
+        "avformat-62.dll",
+        "avutil-60.dll"
+      ]
+    },
+    {
+      "file": "avfilter-11.dll",
+      "bytes": 5386240,
+      "sha256": "7207c27d8fb548458b5b226c9d000d5cc875978ee193be5b430d2ec76dac1c43",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "avcodec-62.dll",
+        "avformat-62.dll",
+        "avutil-60.dll",
+        "swresample-6.dll",
+        "swscale-9.dll"
+      ]
+    },
+    {
+      "file": "avformat-62.dll",
+      "bytes": 2471424,
+      "sha256": "b5d998f7633d102dc5d5a4c29465545a736ecd7e273d9418694de6f394278a79",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "avcodec-62.dll",
+        "avutil-60.dll"
+      ]
+    },
+    {
+      "file": "avutil-60.dll",
+      "bytes": 942592,
+      "sha256": "9592771868c60536916c88762acbde34a5c572f756cee3161fea87d11c7b4513",
+      "imports": [
+        "bcrypt.dll",
+        "KERNEL32.dll",
+        "msvcrt.dll"
+      ]
+    },
+    {
+      "file": "swresample-6.dll",
+      "bytes": 148992,
+      "sha256": "66e42b9307d3b52f8e276b21a348d43d6e46ef681d38adad8db64984a41de46e",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "avutil-60.dll"
+      ]
+    },
+    {
+      "file": "swscale-9.dll",
+      "bytes": 1781760,
+      "sha256": "752afa55557876e43a6686089442174149a9cdac7d9cce3d20ad1c4e69b610ae",
+      "imports": [
+        "KERNEL32.dll",
+        "msvcrt.dll",
+        "avutil-60.dll"
+      ]
+    }
+  ],
+  "files": {
+    "bin/avcodec-62.dll": "4513c706952c1723a4d1ed32e5ccb87efb0ecc217713f2ce9573722fcb275212",
+    "bin/avdevice-62.dll": "87af9c89286daa834c8e13b05d8918451d662aa9ef80fd3389b6a9c2ff345652",
+    "bin/avfilter-11.dll": "7207c27d8fb548458b5b226c9d000d5cc875978ee193be5b430d2ec76dac1c43",
+    "bin/avformat-62.dll": "b5d998f7633d102dc5d5a4c29465545a736ecd7e273d9418694de6f394278a79",
+    "bin/avutil-60.dll": "9592771868c60536916c88762acbde34a5c572f756cee3161fea87d11c7b4513",
+    "bin/ffmpeg.exe": "10e525c3032d375dfab2d80edf01ee8534b3120ec77d06b44d400d1e0820e66a",
+    "bin/ffprobe.exe": "4539d85b5f03ad44de8507f817383d35ebeadbdf5e875bba83755ed402c55e63",
+    "bin/swresample-6.dll": "66e42b9307d3b52f8e276b21a348d43d6e46ef681d38adad8db64984a41de46e",
+    "bin/swscale-9.dll": "752afa55557876e43a6686089442174149a9cdac7d9cce3d20ad1c4e69b610ae",
+    "BUILD-RECIPE.txt": "648e928e5730499841b9d083828b586a23b1ea10ec971d855ae8796d5b08c744",
+    "BUILD.txt": "c2e88fd5e72cd4a910dfa8b5c72c13b2f9734a8ebdc0e3bf46aef5a879800018",
+    "CONFIGURE.txt": "6c74ace0f8bbe7f7c620c78ee27139108e08f38962db975109a32009a0027dd7",
+    "COPYING.GCC-RUNTIME": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+    "COPYING.GPLv3": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "COPYING.LGPLv2.1": "246041b6ecf9bc32d718a62c57877c78b5eb397b6467e74ed7ae2626ab189c30",
+    "COPYING.MinGW-w64-runtime.txt": "ecff91ddb5799c8b79a4bdb576921b9c3e2989783fd1944527e8eb9b41a5ff5f",
+    "FFMPEG-LICENSE.md": "2e1d16c72fd74e12063776371da757322f8b77589386532f4fd8634bde7de1af",
+    "FFPROBE-BUILD.txt": "83f77b5a943a9c653cd27842edc5084deec5351a1e64a2e9a2ef7357983ef36b",
+    "SOURCE.txt": "770e990f619aa82aed896fb1d213b19b1929fa2ddca07c082ec37f7bf336059a",
+    "sources/ffmpeg-8.1.3.tar.xz": "7138d28c96d9d3e3af4ee3d8cad72741f8ffb40da90c1112235dea3ecd3178a3",
+    "sources/ffmpeg-8.1.3.tar.xz.asc": "5f2880c7fea01f8694d30cb9d06362f77241ee67ce5926b157a226b18f08a538",
+    "sources/ffmpeg-devel.asc": "397b3becedcd5a98769967ff1ff8501ddc89f8368b8f766e4701377d7dbaabe5",
+    "sources/source-signature-verification.txt": "78d099d93dfcc6e04c37beb318cc101b43bf7f864ceed4490114db1781040ba6"
+  }
+}

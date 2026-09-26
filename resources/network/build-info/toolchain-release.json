@@ -1,0 +1,23 @@
+{
+  "repository": "MetaCubeX/go",
+  "releaseId": 301886964,
+  "assets": [
+    {
+      "id": 541357332,
+      "name": "go1.26.linux-amd64.tar.gz",
+      "updated_at": "2026-09-02T15:17:16Z",
+      "digest": "sha256:5f2c63d89fa1f10e0b9ce29ef166e16cdee6d7aca280e7f2fc27f3bf4945fab0",
+      "browser_download_url": "https://github.com/MetaCubeX/go/releases/download/build/go1.26.linux-amd64.tar.gz"
+    },
+    {
+      "id": 541357346,
+      "name": "go1.26.patch",
+      "updated_at": "2026-09-02T15:16:58Z",
+      "digest": "sha256:2de2fb90f1c74b8814912b816596a408d3c472edf75d46b3c24868688c48ceee",
+      "browser_download_url": "https://github.com/MetaCubeX/go/releases/download/build/go1.26.patch"
+    }
+  ],
+  "sourceBranch": "release-branch.go1.26",
+  "inspectedBranchCommit": "fc11427d8d43eb11947d11bf67781a3d9bfa89e8",
+  "limitation": "The upstream workflow used a mutable build release; archived source and patch are fixed by digest, but byte-for-byte reproduction of the Mihomo executable has not been established."
+}
